@@ -232,6 +232,10 @@ button:focus {
   background: #CE332A;
 }
 
+.social-icon li .github:hover {
+  background: #0c0c0c;
+}
+
 /* ScrollToTop */
 a.back-to-top {
   display: none;
