@@ -38,7 +38,7 @@ if ($mail_status) { ?>
   <?php
   }else { ?>
    <script language="javascript" type="text/javascript">
-    alert('Message failed. Please, send an email to sejalc230@gmail.com');
+    alert('Message failed. Please, send an email to sagorkars@gmail.com');
    </script>
   <?php }
 
