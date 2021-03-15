@@ -329,7 +329,7 @@
             <div class="col-md-6 col-lg-6 col-sm-12">
               <div class="contact-block">
                 <h2>Contact Form</h2>
-                <form name="contactForm" id="contactForm" method="post">
+                <form name="contactForm" id="contactForm" onsubmit="sendmsg(); return false">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group">
@@ -351,11 +351,11 @@
                     </div>
                     <div class="col-md-12">
                       <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" onchange="trimValue(this)" required></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
                       <div class="submit-button">
-                        <input type="submit" class="btn btn-common" id="submit" name="submit" value="Send Message"/>
+                        <input type="submit" class="btn btn-common" id="submit" name="submit" value="Send Message" />
                         <div id="msgSubmit" class="h3 text-center hidden"></div> 
                         <div class="clearfix"></div> 
                       </div>
