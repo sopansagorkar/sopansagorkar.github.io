@@ -3,7 +3,7 @@ function sendmsg() {
     var email = document.querySelector("#email").value.trim();
     var message = document.querySelector("#message").value.trim();
 
-    const fullmsg = 'Hi Sopan, My name is *${name}*. Message: ${message}';
+    const fullmsg = `Hi Sopan, My name is ${name}. Message: ${message}`;
 
     window.open("https://api.whatsapp.com/send?phone=+919156174248&text=" + fullmsg);
     document.querySelector("#name").value = "";
