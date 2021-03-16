@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <script data-ad-client="ca-pub-8479394314933417" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Sopan Sagorkar</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
-    <!-- Fonts -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
-    <!-- Icon -->
-    <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
-    <!-- Slicknav -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
-    <!-- Menu CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
-    <!-- Slider CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
-    <!-- Nivo Lightbox -->
-    <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css" >
-    <!-- Animate -->
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <!-- Main Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
-    <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <script type="text/JavaScript">
+<head>
+  <!-- Required meta tags -->
+  <script type="text/javascript">
+    function sendmsg() {
+      var name = document.querySelector("#name").value.trim();
+      var email = document.querySelector("#email").value.trim();
+      var message = document.querySelector("#message").value.trim();
+
+      const fullmsg = 'Hi Sopan, My name is *${name}*. Message: ${message}';
+
+      window.open("https://api.whatsapp.com/send?phone=+919156174248&text=" + fullmsg);
+      document.querySelector("#name").value = "";
+      document.querySelector("#email").value = "";
+      document.querySelector("#message").value = "";
+    }
+
+    function trimValue(obj) {
+      obj.value = obj.value.trim();
+    }
+
+  </script>
+  <script data-ad-client="ca-pub-8479394314933417" async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Sopan Sagorkar</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome.min.css">
+  <!-- Icon -->
+  <link rel="stylesheet" type="text/css" href="assets/fonts/simple-line-icons.css">
+  <!-- Slicknav -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/menu_sideslide.css">
+  <!-- Slider CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/slide-style.css">
+  <!-- Nivo Lightbox -->
+  <link rel="stylesheet" type="text/css" href="assets/css/nivo-lightbox.css">
+  <!-- Animate -->
+  <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- Responsive Style -->
+  <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+  <script type="text/JavaScript">
       $(document).ready(function () {
         $('#contactForm').submit(function (e) {
           e.preventDefault();
@@ -38,381 +59,96 @@
         });
       });
     </script>
-  </head>
-  <body>
+</head>
 
-    <!-- Header Area wrapper Starts -->
-    <header id="header-wrap">
-      <!-- Navbar Start -->
-      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
-        <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="collapse navbar-collapse" id="main-navbar">
-            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
-              <li class="nav-item active">
-                <a class="nav-link" href="#hero-area">
-                  Home
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">
-                  About
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">
-                  Projects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resume">
-                  Resume
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+<body>
 
-        <!-- Mobile Menu Start -->
-        <ul class="onepage-nev mobile-menu">
-          <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#about">about</a>
-          </li>
-          <li>
-            <a href="#services">Projects</a>
-          </li>
-          <li>
-            <a href="#resume">Resume</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <!-- Mobile Menu End -->
-      </nav>
-      <!-- Navbar End -->
-
-      <!-- Hero Area Start -->
-      <div id="hero-area" class="hero-area-bg">
-        <div class="overlay"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-sm-12 text-center">
-              <div class="contents">
-                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
-                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Sopan Sagorkar</h2>
-                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Automation Tester and Enthusiastic to learn new technologies
-                </p>
-                <ul class="social-icon">
-                  <li>
-                    <a class="facebook" href="https://www.facebook.com/Psyco.sopan/"><i class="icon-social-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a class="twitter" href="https://twitter.com/psycosopan"><i class="icon-social-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a class="instagram" href="https://www.instagram.com/sopan_sagorkar/"><i class="icon-social-instagram"></i></a>
-                  </li>
-                  <li>
-                    <a class="linkedin" href="https://www.linkedin.com/in/sopan-sagorkar-387349a0/"><i class="icon-social-linkedin"></i></a>
-                  </li>
-                  <li>
-                    <a class="google" href="mailto:sagorkars@gmail.com"><i class="icon-envelope"></i></a>
-                  </li>
-                  <li>
-                    <a class="github" href="https://github.com/sopansagorkar"><i class="icon-social-github"></i></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
+  <!-- Header Area wrapper Starts -->
+  <header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+            <li class="nav-item active">
+              <a class="nav-link" href="#hero-area">
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">
+                About
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">
+                Projects
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">
+                Resume
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">
+                Contact
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- Hero Area End -->
 
-    </header>
-    <!-- Header Area wrapper End -->
+      <!-- Mobile Menu Start -->
+      <ul class="onepage-nev mobile-menu">
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#about">about</a>
+        </li>
+        <li>
+          <a href="#services">Projects</a>
+        </li>
+        <li>
+          <a href="#resume">Resume</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+      <!-- Mobile Menu End -->
+    </nav>
+    <!-- Navbar End -->
 
-    <!-- About Section Start -->
-    <section id="about" class="section-padding">
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="assets/img/about/about-1.jpg" alt="">
-            </div>
-          </div> 
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>Hi Namaste!</h3>
-              <p>I am Sopan Sagorkar, a Senior Test Automation Engineer passionate about Automation Testing.</p>
-              <p>💻 I code in Java.</p>
-              <p>🌱 I’m currently learning Mobile App Automation and DevOps.</p>
-              <p>👯 I’m looking for different ways of Automation Process.</p>
+          <div class="col-md-12 col-sm-12 text-center">
+            <div class="contents">
+              <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
+              <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Sopan Sagorkar</h2>
+              <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Automation Tester and Enthusiastic to learn new
+                technologies
               </p>
-              <div class="about-profile">
-                <ul class="admin-profile">
-                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Sopan Sagorkar</span></li>
-                  <li><span class="pro-title"> Age </span> <span class="pro-detail">30 Years</span></li>
-                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">6+ Year</span></li>
-                  <li><span class="pro-title"> Country </span> <span class="pro-detail">India</span></li>
-                  <li><span class="pro-title"> E-mail </span> <span class="pro-detail">sagorkars@gmail.com</span></li>
-                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+91 9156174248</span></li>
-                </ul>
-              </div>
-              <!--<a href="https://drive.google.com/file/d/1HEmlokT7zxRYdeklG45dtzYk_gDy7cSa/view?usp=sharing" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>-->
-            </div>
-          </div>   
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
-
-    <!-- Services Section Start -->
-    <section id="services" class="services section-padding">
-      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Projects</h2>
-      <div class="container">
-        <div class="row row-equal">
-          <!-- Services item -->
-          <div class="col-xs-6 col-sm-4 col-equal">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
-              <div class="services-content">
-                <h3>Mobile Test Automation</h3>
-                <br>
-                <ul>
-                  <li>Created a Mobile Automation framework which works with both Android and iOS.</li>
-                  <li>For this you need to have Basic Android and iOS driver understanding</li>
-                  <li>Also install Android SDK,Java before setting up this project</li>
-                </ul>
-                <br>
-                <a href="https://github.com/sopansagorkar/AppiumTestAutomation.git"> > View on GitHub </a>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-xs-6 col-sm-4 col-equal">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
-              <div class="services-content">
-                <h3> Selenium Test With Docker</h3>
-                <br>
-                <ul>
-                  <li>This project having capabilities of running selenium test cases on docker container also having capabilities of selenium grid</li>
-                  <li>This project contains multiple Dockerfile's such as for Hub and Nodes</li>
-                  <li>Before starting this project you must have basic linux command understanding with docker</li>
-                </ul>
-                <br>
-                <a href="https://github.com/sopansagorkar/Selenium_Docker"> > View on GitHub </a>
-              </div>
-            </div>
-          </div>
-          <!-- Services item -->
-          <div class="col-xs-6 col-sm-4 col-equal">
-            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
-              <div class="services-content">
-                <h3> Selenium Page object model framework </h3>
-                <br>
-                <ul>
-                  <li>This project is built on Java and POM of selenium.</li>
-                  <li>Also maintained onject repository</li>
-                  <li>All the pages created with reference to Dummy Flight booking website</li>
-                </ul>
-                <br>
-                <a href="https://github.com/sopansagorkar/automation_framework"> > View on GitHub </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Services Section End -->
-
-    <!-- Resume Section Start -->
-    <div id="resume" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="education wow fadeInRight" data-wow-delay="0.3s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-graduation"></i>
-                  <h2 class="timelin-title">Education</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">B.E CSE - RGTU</h3>
-                    <span>2009 - 2013</span>
-                    <p class="line-text">Engineering done in Computer Science Branch.</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">PG-DAC - CDAC IACSD</h3>
-                    <span>2014</span>
-                    <p class="line-text">Post Graduation done from CDAC IACSD Pune in Advance Computing</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Higher Secondary School - Shri Madhav Vidya Peeth</h3>
-                    <span>2009</span>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Senior Secondary School - Shri Madhav Vidya Peeth</h3>
-                    <span>2006</span>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6">
-            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
-              <ul class="timeline">
-                <li>
-                  <i class="icon-briefcase"></i>
-                  <h2 class="timelin-title">Experience</h2>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Software Test Analyst || - FIS</h3>
-                    <span>January 2019 - Ongoing</span>
-                    <p class="line-text">- Worked on Manual and Automation testing for Mobile based application.</p>
-                    <p class="line-text">- Created API Automation Framework for iQNow project .</p>
-                    <p class="line-text">- Working closely with Dev team to mitigate all requirements.Working with US counter parts</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Test Automation Analyst- Barclays</h3>
-                    <span>May 2018 - December 2018</span>
-                    <p class="line-text">- Contributed on Existance Automation Framework.</p>
-                    <p class="line-text">- Integrated Automation framework with CI/CD.</p>
-                    <p class="line-text">- Worked on CI/CD for Barclay Card Feature.</p>
-                    <p class="line-text">- Worked on Manual and Automation testing for 2 Barclays projects</p>
-                  </div>
-                </li>
-                <li>
-                  <div class="content-text">
-                    <h3 class="line-title">Test Engineer/Senior Test Engineer - Cybage Software PVT LTD.</h3>
-                    <span>September 2014 - May 2018</span>
-                    <p class="line-text">- Testing process</p>
-                    <p class="line-text">- Worked on 12 internal projects for Manual and automation testing</p>
-                    <p class="line-text">- Worked on Devops and Testops</p>
-                    <p class="line-text">- Worked on API testing</p>
-                    <p class="line-text">- Worked on Mobile Testing.</p>
-                    <p class="line-text">- Worked on Automation Framework using Selenium and Docker</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Resume Section End -->
-
-   
-    <!-- Contact Section Start -->
-    <section id="contact" class="section-padding">      
-      <div class="contact-form">
-        <div class="container">
-          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="contact-block">
-                <h2>Contact Form</h2>
-                <form name="contactForm" id="contactForm" onsubmit="sendmsg(); return false">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
-                        <div class="help-block with-errors"></div>
-                      </div>                                 
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group">
-                        <input type="email" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
-                        <div class="help-block with-errors"></div>
-                      </div> 
-                    </div>
-                     <div class="col-md-12">
-                      <div class="form-group">
-                        <input type="text" placeholder="Subject" id="subject" class="form-control" required data-error="Please enter your subject">
-                        <div class="help-block with-errors"></div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="form-group"> 
-                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" onchange="trimValue(this)" required></textarea>
-                        <div class="help-block with-errors"></div>
-                      </div>
-                      <div class="submit-button">
-                        <input type="submit" class="btn btn-common" id="submit" name="submit" value="Send Message" />
-                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
-                        <div class="clearfix"></div> 
-                      </div>
-                    </div>
-                  </div>            
-                </form>
-              </div>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-12">
-              <div class="footer-right-area wow fadeIn">
-                <h2>Contact Address</h2>
-                <div class="footer-right-contact">
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-map-marker"></i>
-                    </div>
-                    <p>Indore, Madhya Pradesh, India</p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-envelope"></i>
-                    </div>
-                    <p><a href="mailto:sagorkars@gmail.com">sagorkars@gmail.com</a></p>
-                  </div>
-                  <div class="single-contact">
-                    <div class="contact-icon">
-                      <i class="fa fa-phone"></i>
-                    </div>
-                    <p><a href="#">+91 9156174248</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>   
-    </section>
-    <!-- Contact Section End -->
-
-    <!-- Footer Section Start -->
-    <footer class="footer-area section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
               <ul class="social-icon">
                 <li>
-                  <a class="facebook" href="https://www.facebook.com/Psyco.sopan/"><i class="icon-social-facebook"></i></a>
+                  <a class="facebook" href="https://www.facebook.com/Psyco.sopan/"><i
+                      class="icon-social-facebook"></i></a>
                 </li>
                 <li>
                   <a class="twitter" href="https://twitter.com/psycosopan"><i class="icon-social-twitter"></i></a>
                 </li>
                 <li>
-                  <a class="instagram" href="https://www.instagram.com/sopan_sagorkar/"><i class="icon-social-instagram"></i></a>
+                  <a class="instagram" href="https://www.instagram.com/sopan_sagorkar/"><i
+                      class="icon-social-instagram"></i></a>
                 </li>
                 <li>
-                  <a class="linkedin" href="https://www.linkedin.com/in/sopan-sagorkar-387349a0/"><i class="icon-social-linkedin"></i></a>
+                  <a class="linkedin" href="https://www.linkedin.com/in/sopan-sagorkar-387349a0/"><i
+                      class="icon-social-linkedin"></i></a>
                 </li>
                 <li>
                   <a class="google" href="mailto:sagorkars@gmail.com"><i class="icon-envelope"></i></a>
@@ -421,36 +157,334 @@
                   <a class="github" href="https://github.com/sopansagorkar"><i class="icon-social-github"></i></a>
                 </li>
               </ul>
-              <p>Made with <i class="icon-heart"></i></p>
-             <!-- <p>Thanks <a href="https://uideck.com/">UIdeck</a> for template inspiration :)</p>-->
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer Section End -->
+    </div>
+    <!-- Hero Area End -->
 
-    <!-- Go to Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="icon-arrow-up"></i>
-    </a>
+  </header>
+  <!-- Header Area wrapper End -->
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="assets/js/jquery-min.js"></script>
-    <script src="assets/js/popper.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.mixitup.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery.nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>  
-    <script src="assets/js/nivo-lightbox.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/form-validator.min.js"></script>
-    <script src="assets/js/contact-form-script.min.js"></script>
-    <script src="assets/js/map.js"></script>
-      
-  </body>
+  <!-- About Section Start -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+            <img class="img-fluid" src="assets/img/about/about-1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+            <h3>Hi Namaste!</h3>
+            <p>I am Sopan Sagorkar, a Senior Test Automation Engineer passionate about Automation Testing.</p>
+            <p>💻 I code in Java.</p>
+            <p>🌱 I’m currently learning Mobile App Automation and DevOps.</p>
+            <p>👯 I’m looking for different ways of Automation Process.</p>
+            </p>
+            <div class="about-profile">
+              <ul class="admin-profile">
+                <li><span class="pro-title"> Name </span> <span class="pro-detail">Sopan Sagorkar</span></li>
+                <li><span class="pro-title"> Age </span> <span class="pro-detail">30 Years</span></li>
+                <li><span class="pro-title"> Experience </span> <span class="pro-detail">6+ Year</span></li>
+                <li><span class="pro-title"> Country </span> <span class="pro-detail">India</span></li>
+                <li><span class="pro-title"> E-mail </span> <span class="pro-detail">sagorkars@gmail.com</span></li>
+                <li><span class="pro-title"> Phone </span> <span class="pro-detail">+91 9156174248</span></li>
+              </ul>
+            </div>
+            <!--<a href="https://drive.google.com/file/d/1HEmlokT7zxRYdeklG45dtzYk_gDy7cSa/view?usp=sharing" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section End -->
+
+  <!-- Services Section Start -->
+  <section id="services" class="services section-padding">
+    <h2 class="section-title wow flipInX" data-wow-delay="0.4s">Projects</h2>
+    <div class="container">
+      <div class="row row-equal">
+        <!-- Services item -->
+        <div class="col-xs-6 col-sm-4 col-equal">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+            <div class="services-content">
+              <h3>Mobile Test Automation</h3>
+              <br>
+              <ul>
+                <li>Created a Mobile Automation framework which works with both Android and iOS.</li>
+                <li>For this you need to have Basic Android and iOS driver understanding</li>
+                <li>Also install Android SDK,Java before setting up this project</li>
+              </ul>
+              <br>
+              <a href="https://github.com/sopansagorkar/AppiumTestAutomation.git"> > View on GitHub </a>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-xs-6 col-sm-4 col-equal">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+            <div class="services-content">
+              <h3> Selenium Test With Docker</h3>
+              <br>
+              <ul>
+                <li>This project having capabilities of running selenium test cases on docker container also having
+                  capabilities of selenium grid</li>
+                <li>This project contains multiple Dockerfile's such as for Hub and Nodes</li>
+                <li>Before starting this project you must have basic linux command understanding with docker</li>
+              </ul>
+              <br>
+              <a href="https://github.com/sopansagorkar/Selenium_Docker"> > View on GitHub </a>
+            </div>
+          </div>
+        </div>
+        <!-- Services item -->
+        <div class="col-xs-6 col-sm-4 col-equal">
+          <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+            <div class="services-content">
+              <h3> Selenium Page object model framework </h3>
+              <br>
+              <ul>
+                <li>This project is built on Java and POM of selenium.</li>
+                <li>Also maintained onject repository</li>
+                <li>All the pages created with reference to Dummy Flight booking website</li>
+              </ul>
+              <br>
+              <a href="https://github.com/sopansagorkar/automation_framework"> > View on GitHub </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+  <!-- Resume Section Start -->
+  <div id="resume" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="education wow fadeInRight" data-wow-delay="0.3s">
+            <ul class="timeline">
+              <li>
+                <i class="icon-graduation"></i>
+                <h2 class="timelin-title">Education</h2>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">B.E CSE - RGTU</h3>
+                  <span>2009 - 2013</span>
+                  <p class="line-text">Engineering done in Computer Science Branch.</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">PG-DAC - CDAC IACSD</h3>
+                  <span>2014</span>
+                  <p class="line-text">Post Graduation done from CDAC IACSD Pune in Advance Computing</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Higher Secondary School - Shri Madhav Vidya Peeth</h3>
+                  <span>2009</span>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Senior Secondary School - Shri Madhav Vidya Peeth</h3>
+                  <span>2006</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6">
+          <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+            <ul class="timeline">
+              <li>
+                <i class="icon-briefcase"></i>
+                <h2 class="timelin-title">Experience</h2>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Software Test Analyst || - FIS</h3>
+                  <span>January 2019 - Ongoing</span>
+                  <p class="line-text">- Worked on Manual and Automation testing for Mobile based application.</p>
+                  <p class="line-text">- Created API Automation Framework for iQNow project .</p>
+                  <p class="line-text">- Working closely with Dev team to mitigate all requirements.Working with US
+                    counter parts</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Test Automation Analyst- Barclays</h3>
+                  <span>May 2018 - December 2018</span>
+                  <p class="line-text">- Contributed on Existance Automation Framework.</p>
+                  <p class="line-text">- Integrated Automation framework with CI/CD.</p>
+                  <p class="line-text">- Worked on CI/CD for Barclay Card Feature.</p>
+                  <p class="line-text">- Worked on Manual and Automation testing for 2 Barclays projects</p>
+                </div>
+              </li>
+              <li>
+                <div class="content-text">
+                  <h3 class="line-title">Test Engineer/Senior Test Engineer - Cybage Software PVT LTD.</h3>
+                  <span>September 2014 - May 2018</span>
+                  <p class="line-text">- Testing process</p>
+                  <p class="line-text">- Worked on 12 internal projects for Manual and automation testing</p>
+                  <p class="line-text">- Worked on Devops and Testops</p>
+                  <p class="line-text">- Worked on API testing</p>
+                  <p class="line-text">- Worked on Mobile Testing.</p>
+                  <p class="line-text">- Worked on Automation Framework using Selenium and Docker</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Resume Section End -->
+
+
+  <!-- Contact Section Start -->
+  <section id="contact" class="section-padding">
+    <div class="contact-form">
+      <div class="container">
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="contact-block">
+              <h2>Contact Form</h2>
+              <form name="contactForm" id="contactForm" onsubmit="sendmsg(); return false">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required
+                        data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="email" placeholder="Email" id="email" class="form-control" name="email" required
+                        data-error="Please enter your email">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="text" placeholder="Subject" id="subject" class="form-control" required
+                        data-error="Please enter your subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" id="message" placeholder="Your Message" rows="5"
+                        data-error="Write your message" onchange="trimValue(this)" required></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="submit-button">
+                      <input type="submit" class="btn btn-common" id="submit" name="submit" />
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-6 col-sm-12">
+            <div class="footer-right-area wow fadeIn">
+              <h2>Contact Address</h2>
+              <div class="footer-right-contact">
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-map-marker"></i>
+                  </div>
+                  <p>Indore, Madhya Pradesh, India</p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                  <p><a href="mailto:sagorkars@gmail.com">sagorkars@gmail.com</a></p>
+                </div>
+                <div class="single-contact">
+                  <div class="contact-icon">
+                    <i class="fa fa-phone"></i>
+                  </div>
+                  <p><a href="#">+91 9156174248</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer Section Start -->
+  <footer class="footer-area section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+            <ul class="social-icon">
+              <li>
+                <a class="facebook" href="https://www.facebook.com/Psyco.sopan/"><i
+                    class="icon-social-facebook"></i></a>
+              </li>
+              <li>
+                <a class="twitter" href="https://twitter.com/psycosopan"><i class="icon-social-twitter"></i></a>
+              </li>
+              <li>
+                <a class="instagram" href="https://www.instagram.com/sopan_sagorkar/"><i
+                    class="icon-social-instagram"></i></a>
+              </li>
+              <li>
+                <a class="linkedin" href="https://www.linkedin.com/in/sopan-sagorkar-387349a0/"><i
+                    class="icon-social-linkedin"></i></a>
+              </li>
+              <li>
+                <a class="google" href="mailto:sagorkars@gmail.com"><i class="icon-envelope"></i></a>
+              </li>
+              <li>
+                <a class="github" href="https://github.com/sopansagorkar"><i class="icon-social-github"></i></a>
+              </li>
+            </ul>
+            <p>Made with <i class="icon-heart"></i></p>
+            <!-- <p>Thanks <a href="https://uideck.com/">UIdeck</a> for template inspiration :)</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer Section End -->
+
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+    <i class="icon-arrow-up"></i>
+  </a>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="assets/js/jquery-min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.mixitup.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/wow.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.easing.min.js"></script>
+  <script src="assets/js/nivo-lightbox.js"></script>
+  <script src="assets/js/jquery.slicknav.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/form-validator.min.js"></script>
+  <script src="assets/js/contact-form-script.min.js"></script>
+  <script src="assets/js/map.js"></script>
+
+</body>
+
 </html>

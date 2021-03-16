@@ -10,3 +10,7 @@ function sendmsg() {
     document.querySelector("#email").value = "";
     document.querySelector("#message").value = "";
 }
+
+function trimValue(obj) {
+    obj.value = obj.value.trim();
+}
