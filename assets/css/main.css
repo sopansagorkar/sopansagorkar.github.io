@@ -232,10 +232,6 @@ button:focus {
   background: #CE332A;
 }
 
-.social-icon li .github:hover {
-  background: #0c0c0c;
-}
-
 /* ScrollToTop */
 a.back-to-top {
   display: none;
@@ -417,7 +413,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .timeline li .line-text {
-  color: #888;
+  color: rgb(99, 98, 98);
   line-height: 18px;
 }
 
@@ -461,13 +457,6 @@ a.back-to-top:hover, a.back-to-top:focus {
   width: 50px;
   height: 50px;
   text-align: center;
-}
-
-.timeline .content-text li{
-  list-style-type: disc;
-  text-align: left;
-  margin-left: 10px;
-  padding-left: 0px;
 }
 
 
@@ -1158,4 +1147,59 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 #copyright p a:hover {
   color: #00b4d9;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+body.dark {
+  background-color: #070707;
+}
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  width: 50px;
+  height: 26px;
+  background-color:#292c35;
+  display: flex;
+  border-radius:50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+/*  target the elemenent after the label*/
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.fa-moon {
+  color: pink;
+}
+
+.fa-sun {
+  color: yellow;
 }
