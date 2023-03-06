@@ -1172,6 +1172,14 @@ body.dark {
   background-color: #070707 !important;
   color: white;
 }
+body.dark .pro-title:after content{
+  color: rgb(255, 255, 255);
+  /* color: black; */
+}
+body.dark .about-profile  span{
+  color: rgb(255, 255, 255);
+  /* color: black; */
+}
 body.dark .services {
   background-color: #1a1a1a !important;
   color: white;
