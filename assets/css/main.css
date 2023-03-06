@@ -24,7 +24,6 @@ h1, h2, h3, h4 {
   font-weight: 1000;
   font-family: "Source Sans Pro", sans-serif;
 }
-
 .script-font {
   font-family: 'Shadows Into Light', cursive;
 }
@@ -1186,6 +1185,22 @@ body.dark .experience .content-text {
   /* color: black; */
 }
 body.dark .experience .content-text p {
+  color: #bbb;
+  /* color: black; */
+}
+body.dark .education .content-text {
+  background-color: #1a1a1a;
+  /* color: black; */
+}
+body.dark .education .content-text p {
+  color: #bbb;
+  /* color: black; */
+}
+body.dark .contact-form-area .content-text {
+  background-color: #1a1a1a;
+  /* color: black; */
+}
+body.dark .contact-form-area .content-text p {
   color: #bbb;
   /* color: black; */
 }
