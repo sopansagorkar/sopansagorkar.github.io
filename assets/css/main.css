@@ -1234,6 +1234,10 @@ body.dark .social-icon li a{
   color: #fff;
   background: #000;
 }
+body.dark .contact-form{
+  color: #fff;
+  background: #000;
+}
 
 .checkbox {
   opacity: 0;
